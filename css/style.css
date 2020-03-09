@@ -529,6 +529,23 @@ div.hideCategory {
         margin-left: 300px;
         
     }
+    .year{
+        display: visible;
+        color: teal;
+        width: 20%;
+        font-size: 20px;
+    }
+    .picture {
+        width: 700px;
+        margin: 0;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: translateX(0);
+        text-align: center;
+    }
  }
 
  /* 660 */
@@ -614,17 +631,13 @@ div.hideCategory {
       }
       .picture {
         width: 600px;
-        margin: 0;
-        position: relative;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        transform: translateX(0);
-        text-align: center;
     }
     }
-      @media screen and (max-width: 410px){
+      @media screen and (max-width: 450px){
+        body{
+            width: 100%;
+            
+        }
         .header ul li a{
             padding: 10px;
             margin: 0;
@@ -637,7 +650,7 @@ div.hideCategory {
         }
         .picture {
             height: 200px;
-            left: -300px;
+            
         }
       }
       @media screen and (max-width: 410px){
