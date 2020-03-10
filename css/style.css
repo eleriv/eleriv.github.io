@@ -238,7 +238,7 @@ div[class^='tag-'] {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
     width: 120px;
     height: 30px;
-    background-color: rgb(233, 140, 194);
+    background-color: rgb(240, 185, 217);
     margin-right:  30px;
 }
 div[class^='tag-'] p{
@@ -328,7 +328,7 @@ div[class^='category-'] {
     
 }
 .work-category .active {
-    background-color: rgb(223, 197, 218);
+    background-color: rgb(238, 229, 236);
 }
 button.active {
     color: #000;
