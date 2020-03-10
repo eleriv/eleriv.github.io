@@ -112,7 +112,7 @@ section{
     background: url(../picture/mina.png) no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: #313131;
+    /*background-color: #313131;*/
     background-attachment: fixed;
     z-index: 9;
     height: 100vh;
