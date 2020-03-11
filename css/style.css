@@ -652,6 +652,11 @@ div.hideCategory {
             height: 200px;
             
         }
+        .work-category button {
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+        }
       }
       @media screen and (max-width: 410px){
         .contact .section-title h1, 
