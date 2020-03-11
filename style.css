@@ -1,0 +1,686 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    height: 100%;
+    line-height: 1;
+    color: #ffffff;
+    background-color: #1d1c1c;
+    font-family: 'Open Sans', 'PT Sans Narrow', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+a {
+    text-decoration: none;
+    font-size:  .9rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+/*HEADER STYLE NAV*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding:  25px 0;
+    z-index: 99;
+}
+header ul li a{
+    color: rgba(255, 255, 255, 0.692);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 40px;
+    visibility: hidden;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+
+/*HEADER STICKY STYLE nav*/
+.fixed{
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.822);
+    z-index: 999;
+}
+
+section{
+    padding: 10px 0;
+    height: 100%;
+    position: relative;
+}
+
+/*HOME SECTION STYLE*/
+.home{
+    color:#fff;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url(../picture/mina.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-color: #313131;*/
+    background-attachment: fixed;
+    z-index: 9;
+    height: 100vh;
+}
+.home h1{
+    font-size: 90px;
+    
+    text-shadow: 0 15px 20px #000000b0;
+    margin-bottom: 0;
+    visibility: hidden;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 5px;
+}
+.home h5{
+    background: #000;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0 50px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    visibility: hidden;
+}
+.downloadbtn{
+    display: inline-block;
+    padding:  15px 35px;
+    background-color: #ffffff10;
+    border: 1px solid #ffffff30;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 35px;
+    position: relative;
+    z-index: 999;
+    margin-bottom: 4rem;
+    cursor: pointer;
+}
+/* TITLE*/
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    display: inline-block;
+    font-size: 28px;
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    padding: 0 0 10px;
+}
+
+/*ABOUT SECTION*/
+.about {   
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+.about h1 {
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .1;
+}
+.about-info{
+    max-width: 900px;
+    background-color: rgba(93, 94, 93, 0.651);
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    padding: 50px;
+    position: relative;
+    top: -70px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.about-info p{
+    font-size: 1.3rem;
+    color: #BEBEBE;
+}
+.about-info p:nth-child(2), 
+.about-info p:last-child{
+    margin-top: 30px;
+}
+.about img {
+    width: 500px;
+    position: relative;
+    top: -300px;
+    left: calc(100% - 100px);
+    transform: translateX(calc(-100% + 100px));
+}
+/*SKILLS SECTION*/
+.skills {
+    
+    width: 60%;
+    margin: 0 auto;
+}
+.skills h1{
+    text-align: right;
+    z-index: 0;
+    font-size: 10rem;
+    opacity: .1;
+}
+.skills-info {
+    font-size: 1.4rem;
+    color: #BEBEBE;
+    max-width: 800px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.html{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+div[class^='tag-'] {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+    width: 120px;
+    height: 30px;
+    background-color: rgb(240, 185, 217);
+    margin-right:  30px;
+}
+div[class^='tag-'] p{
+    color: rgb(7, 7, 7);
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    padding-top: 3px;
+}
+.progressbar{
+    position: relative;
+    width: 600px;
+    height: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-top: 7px;
+}
+div[class^='bar-']{
+    position: absolute;
+    background-color: rgb(230, 170, 205);
+    height: 16px;
+    border-radius: 20px;
+    margin: 2.6px;
+}
+.bar-html,
+.bar-css,
+.bar-javascript,
+.bar-mysql{
+    width: calc(0 - 6px);
+}
+/*WORK SECTION STYLE*/
+.work{
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    z-index: 99; 
+}
+.work .section-title h1{
+    text-align: left;
+    z-index: 0;
+    font-size: 10rem;
+    opacity: .1;
+    
+}
+/*.work-category button */
+
+.work-category button {
+    text-transform: capitalize;
+    border: 3px solid rgb(240, 237, 237);
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    background-color: #252627;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    
+}
+div[class^='category-'] {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+}
+.work a {
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+.picture{
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-400px);
+    text-align: center;
+}
+.work .section-title {
+    display: inline;
+    
+}
+.work-category .active {
+    background-color: rgb(238, 229, 236);
+}
+button.active {
+    color: #000;
+}
+.work a img {
+    height: 400px;
+    justify-self: center;
+    justify-self: center;
+    position: relative;
+    display: inline-block;
+    
+}
+
+div.hideCategory {
+    display: none;
+}
+.showCategory {
+    display: block;
+}
+#git {
+    width: 100px;
+    position: relative;
+    opacity: 1;
+    cursor: pointer;
+    display: inline;
+}
+
+/*TIMELINE SECTION STYLE*/
+
+#education {
+    width: 60%;
+    margin: 0 auto;
+    
+    
+}
+.education {
+    text-align: right;
+    z-index: 0;
+    font-size: 10rem;
+    opacity: .1;
+    
+}
+.timeline {
+    background: rgba(255, 255, 255, 0.89);
+    
+    margin: 2em auto;
+    line-height: 1.4em;
+    padding: 1em;
+    padding-left: 3em;
+    list-style: none;
+    text-align: left;
+    margin-left: 10em;
+    margin-right: 3em;
+    min-width: 22em;
+  }
+  
+  .event {
+    min-width: 20em;
+    width: 100%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgb(112, 112, 104);
+    z-index: 400;
+    
+  }
+  
+  .timeline .event:before,
+  .timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 1em;
+  }
+  
+  .timeline .event:before {
+    left: -15em;
+    color: rgba(110, 109, 109, 0.685);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 9em;
+  }
+  .timeline .event:after {
+    box-shadow: 0 0 0 0.2em #74747400;
+    left: -3.5em;
+    background: #313534;
+    border-radius: 50%;
+    height: 0.75em;
+    width: 0.75em;
+    content: "";
+  }
+  .blob{
+    position: absolute;
+    font-size: 0.90rem;
+    right: -110px;
+    color: rgba(110, 109, 109, 0.685);
+    font-weight: 100;
+    }
+  .time-infos {
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  .time-infos > h1 {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: black;
+  }
+  
+  .time-info {
+    margin-right: 5px;
+    text-indent: 2px;
+    opacity: 0.9;
+  }
+  .year{
+    display: none;
+    
+}
+
+/*CONTACT SECTION STYLE*/
+.contact{
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    z-index: 99;
+}
+.contact .section-title h1{
+    text-align: left;
+    z-index: 0;
+    font-size: 10rem;
+    opacity: .1;
+}
+.contact-info{
+    max-width: 900px;
+    background-color: rgba(93, 94, 93, 0.651);
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    padding: 50px;
+    position: relative;
+    top: -70px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.contact-info p{
+    font-size: 1.3rem;
+    color: #BEBEBE;
+}
+.contact-info p:nth-child(2), 
+.contact-info p:last-child{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 999px){
+    .header ul li a{
+        padding: 0;
+        margin: 10px;
+    }
+    .contact .section-title h1, 
+    .about h1, 
+    .work .section-title h1, 
+    #education .section-title h1, 
+    .skills h1{
+        text-align: center;
+        font-size: 5rem;
+        padding: 0;
+        margin: 0;
+        color: whitesmoke;
+        padding: 30px;
+    }
+    .skills, .about, .work, #education, .contact {
+    
+        width: 100%;
+        margin: 0 auto;
+    }
+    #git {
+        margin-left: 50px;
+    }
+    .about-info, .contact-info{
+        
+        top: 0px;
+    }
+    .event {
+        min-width: 20em;
+        width: 100%;
+        vertical-align: middle;
+        box-sizing: content-box;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 400;
+        
+      }
+      .work a img {
+        height: 200px;
+        margin-left: 300px;
+        
+    }
+    .year{
+        display: visible;
+        color: teal;
+        width: 20%;
+        font-size: 20px;
+    }
+    .picture {
+        width: 700px;
+        margin: 0;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: translateX(0);
+        text-align: center;
+    }
+ }
+
+ /* 660 */
+ @media screen and (max-width: 660px){
+    .header ul li a{
+        padding: 0;
+        margin: 5px;
+        letter-spacing: normal;
+    }
+    body{
+        width: 100%;
+        
+    }
+    
+    .fixed{
+        width: 100%;
+        
+    }
+    .about img {
+        width: 200px;
+        position: relative;
+        top: -30px;
+        left: calc(100% - 100px);
+        transform: translateX(calc(-100% + 100px));
+    }
+    .blob{
+        visibility: hidden;
+    }
+    .contact .section-title h1, 
+    .about h1, 
+    .work .section-title h1, 
+    #education .section-title h1, 
+    .skills h1{
+        text-align: left;
+        font-size: 5rem;
+        padding: 0;
+        margin: 0;
+        color: whitesmoke;
+        padding: 0px;
+        width: 60%;
+    }
+    .work a img {
+        height: 300px;
+        margin-left: 0;
+    }
+    .timeline{
+        text-align: right;
+        min-width: 200px;
+    }
+    
+      .event{
+          margin: 0;
+          padding: 0;
+      }
+     
+      .timeline{
+          margin: 0;
+          padding: 0;
+      }
+      .timeline .event:before,
+      .timeline .event:after {
+        position: absolute;
+        display: block;
+        top: 0;
+      }
+      .timeline .time-info:after {
+        
+        color: rgba(255, 255, 255, 0.685);
+        content: attr(data-date);
+        text-align: left;
+        font-weight: 100;
+        font-size: 0.9em;
+        min-width: 9em;
+      }
+      .timeline .time-info:after {
+        
+        color: rgba(255, 255, 255, 0);
+        content: none;
+        text-align: left;
+        font-weight: 100;
+        font-size: 0.9em;
+        min-width: 9em;
+      }
+      .picture {
+        width: 600px;
+    }
+    }
+      @media screen and (max-width: 450px){
+        body{
+            width: 100%;
+            
+        }
+        .header ul li a{
+            padding: 10px;
+            margin: 0;
+            letter-spacing: normal;
+            display: inline block;
+        }
+        .about-info{
+            padding: 10px;
+            margin: 0px;
+        }
+        .picture {
+            height: 200px;
+            
+        }
+      }
+      @media screen and (max-width: 410px){
+        .contact .section-title h1, 
+        .about h1, 
+        .work .section-title h1, 
+        #education .section-title h1, 
+        .skills h1{
+            text-align: left;
+            font-size: 4rem;
+            color: whitesmoke;
+            width: 100%;
+        }
+        .contact .section-title, 
+        .about, 
+        .work .section-title, 
+        #education .section-title, 
+        .skills{
+            width: 100%;
+        }
+        .year{
+            display: visible;
+            color: teal;
+            width: 20%;
+            font-size: 20px;
+        }
+        .work a img {
+            height: 200px;
+            left: 200px;
+        }
+        
+      }
+ 
