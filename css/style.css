@@ -298,7 +298,7 @@ div[class^='bar-']{
     outline: none;
     cursor: pointer;
     font-weight: 500;
-    
+    margin-bottom: 5px;
 }
 div[class^='category-'] {
     margin-top: 50px;
@@ -503,7 +503,6 @@ div.hideCategory {
         padding: 30px;
     }
     .skills, .about, .work, #education, .contact {
-    
         width: 100%;
         margin: 0 auto;
     }
